@@ -1,4 +1,3 @@
-import logo from "../pictures/logo.jpg";
 import Button from "../components/Button";
 
 function Navbar() {
@@ -8,7 +7,7 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <img
-            src={logo}
+            src=""
             alt="Precis Kalibrering & Service"
             className="h-12 w-12 object-contain"
            />
