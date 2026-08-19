@@ -4,6 +4,9 @@ import SectionTitle from "../components/SectionTitle";
 import ServiceCard from "../components/ServiceCard";
 import Feature from "../components/Feature";
 import ContactBanner from "../components/ContactBanner";
+import front from "../pictures/front.png";
+import service from "../pictures/service.png";
+
 
 function FrontPage() {
   return (
@@ -13,7 +16,7 @@ function FrontPage() {
 
       <section
         className="relative min-h-[600px] bg-cover bg-center"
-        style={{ backgroundImage: "url('/scale-calibration.jpg')" }}
+        style={{ backgroundImage: `url(${front})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#061b34] via-[#061b34]/90 to-[#061b34]/20" />
 
@@ -108,8 +111,8 @@ function FrontPage() {
       <section className="grid md:grid-cols-2">
 
         <div
-          className="min-h-[500px] bg-cover bg-center"
-          style={{ backgroundImage: "url('/technician.jpg')" }}
+          className="min-h-[500px] bg-cover bg-center brightness-125"
+          style={{ backgroundImage: `url(${service})` }}
         />
 
         <div className="flex flex-col justify-center bg-[#061e3a] px-8 py-20 text-white md:px-16">

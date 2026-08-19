@@ -1,4 +1,7 @@
 import Button from "../components/Button";
+import logo from "../pictures/logo.png";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -7,7 +10,7 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <img
-            src=""
+            src={logo}
             alt="Precis Kalibrering & Service"
             className="h-12 w-12 object-contain"
            />
@@ -19,17 +22,19 @@ function Navbar() {
         </div>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a className="font-semibold text-blue-600" href="#">HEM</a>
+          <NavLink to="/" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>HEM</NavLink>
 
-          <a href="#">TJÄNSTER</a>
+  <NavLink to="/services" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>TJÄNSTER</NavLink>
           <a href="#">VÅGAR & UTRUSTNING</a>
           <a href="#">OM OSS</a>
           <a href="#">KONTAKT</a>
         </nav>
+        
 
         <Button variant="primary">
-          KONTAKTA OSS 
+          LOGGA IN
         </Button>
+
 
       </div>
     </header>
