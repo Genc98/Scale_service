@@ -8,7 +8,6 @@ function ServicePage() {
 
       <Navbar />
 
-      {/* HERO */}
       <section className="bg-[#061b34] px-6 py-24 text-white">
         <div className="mx-auto max-w-7xl">
 

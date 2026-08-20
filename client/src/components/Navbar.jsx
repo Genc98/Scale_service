@@ -26,7 +26,7 @@ function Navbar() {
           <NavLink to="/services" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>TJÄNSTER</NavLink>
           <a href="#">VÅGAR & UTRUSTNING</a>
           <NavLink to="/aboutus" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>OM OSS</NavLink>
-          <a href="#">KONTAKT</a>
+          <NavLink to="/contact" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>KONTAKT</NavLink>
         </nav>
         
 

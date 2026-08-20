@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import SectionTitle from "../components/SectionTitle";
@@ -9,6 +10,7 @@ import service from "../pictures/service.png";
 
 
 function FrontPage() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white text-slate-900">
 
@@ -34,7 +36,9 @@ function FrontPage() {
 
             <div className="mt-8 flex gap-4">
 
-              <Button>VÅRA TJÄNSTER</Button>
+              <Button onClick={() => navigate("/services")}>
+                VÅRA TJÄNSTER
+              </Button>
 
               <Button variant="outline">KONTAKTA OSS</Button>
 

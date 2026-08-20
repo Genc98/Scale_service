@@ -8,7 +8,7 @@ function ServiceSection({
   gray = false,
 }) {
   return (
-    <section className={`${gray ? "bg-slate-50" : "bg-white"} px-6 py-24`}>
+    <section className={`${gray ? "bg-slate-100" : "bg-white"} px-6 py-24`}>
       <div className="mx-auto grid max-w-7xl gap-16 md:grid-cols-2 md:items-center">
 
         <div className={reverse ? "order-2 md:order-1" : ""}>
