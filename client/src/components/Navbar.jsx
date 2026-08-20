@@ -1,6 +1,5 @@
 import Button from "../components/Button";
 import logo from "../pictures/logo.png";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -24,9 +23,9 @@ function Navbar() {
         <nav className="hidden items-center gap-8 md:flex">
           <NavLink to="/" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>HEM</NavLink>
 
-  <NavLink to="/services" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>TJÄNSTER</NavLink>
+          <NavLink to="/services" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>TJÄNSTER</NavLink>
           <a href="#">VÅGAR & UTRUSTNING</a>
-          <a href="#">OM OSS</a>
+          <NavLink to="/aboutus" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>OM OSS</NavLink>
           <a href="#">KONTAKT</a>
         </nav>
         
