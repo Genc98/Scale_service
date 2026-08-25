@@ -24,15 +24,17 @@ function Navbar() {
           <NavLink to="/" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>HEM</NavLink>
 
           <NavLink to="/services" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>TJÄNSTER</NavLink>
-          <a href="#">VÅGAR & UTRUSTNING</a>
+          <NavLink to="/equipments" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>VÅGAR & UTRUSTNING</NavLink>
           <NavLink to="/aboutus" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>OM OSS</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? "font-semibold text-blue-600" : ""}>KONTAKT</NavLink>
         </nav>
         
 
-        <Button variant="primary">
-          LOGGA IN
-        </Button>
+        <NavLink to="/login">
+          <Button variant="primary">
+            LOGGA IN
+          </Button>
+        </NavLink>
 
 
       </div>
